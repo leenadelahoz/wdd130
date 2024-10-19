@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -11,11 +12,13 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1,
 #hero-msg h4{
     text-align: center;
+    padding-top: 5px;
 }
 
 .button-box{
@@ -24,15 +27,22 @@ nav a {
 
 main section{
     text-align: center;
+    font-family:poppins, 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
 }
 
 body {
-    background-color: #AEAC9F; 
+    background-color: #AEAC9F;
+    font-family: sans-serif, Arial;
+    font-size: 22px; 
+    margin: 0;
+    padding: 0;
 }
 header {
     text-align: center;
     background-color:#13293D;
-    color:white
+    color:white;
+    font-family: poppins, 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+
 }
 nav a:hover {
     background-color: #78C5D7;
@@ -41,6 +51,10 @@ nav a:hover {
 .book, .join {
     background-color:#78C5D7;
     text-decoration: none;
+    font-family:poppins, 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 #background {
     background-color:#AEAC9F;
@@ -53,6 +67,7 @@ footer {
     background-color:#13293D;
     color: white;
     font-size: 1.5em;
+    padding: 25px 50px;
 }
 h4{
     color:black
@@ -78,10 +93,46 @@ footer a {
 }
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
 }
 footer p a:hover {
     text-decoration: underline;
-}      
+}  
+h4{
+    font-family:poppins, 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+.msg p{
+    font-family: sans-serif, Arial;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.home-title{
+    font-family:poppins, 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-size:2em;
+    margin-top: 10px;
+}
+.msg {
+    line-height: 1.5em;
+    padding: 35px;
+}
+h2{
+    margin: 0;
+}
+footer .social img{
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+footer{
+    margin-top: 200px;
+}
+.card-img{
+    border: 10px solid black;
+}
+main section img{
+    box-sizing:border-box;
+}
