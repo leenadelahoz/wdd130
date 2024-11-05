@@ -60,7 +60,7 @@ nav a:hover {
     border-radius: 5px;
 }
 #background {
-    background-color:#AEAC9F;
+    background-color:#d9c2a3;
 }
     
 h4{
@@ -85,7 +85,7 @@ footer a {
 .image-container {
     text-align: center;
 }
-.icon{
+.icon, .logo{
     width: 80px;
     padding-top: 10px;
 }
