@@ -1,0 +1,13 @@
+
+.blog-post{
+    max-width: 400px;
+    margin:0 auto;
+    border-radius: 10px;
+}
+.blog-stats{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h1{
+  text-align: center;
+}
