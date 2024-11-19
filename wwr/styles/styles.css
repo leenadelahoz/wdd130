@@ -82,9 +82,7 @@ footer a {
 .image-container {
     text-align: center;
 }
-.image-container {
-    text-align: center;
-}
+
 .icon, .logo{
     width: 80px;
     padding-top: 10px;
@@ -110,7 +108,7 @@ h4{
 }
 .msg {
     background-color:#13293D;
-    color: white
+    color: white;
     padding: 35px;
     grid-column: 6/10;
     grid-row: 6/7;
@@ -208,6 +206,57 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+/* Rivers  Page */
+
+#rivers {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.river-image-container{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.rivers-text{
+    grid-column: 2/3;
+    z-index: 1;
+    grid-row: 1/2;
+    background-color: white;
+    max-height: 100px;
+    align-self: center;
+    text-align: center;
+    opacity: .8;
+}
+#rivers-img{
+    width: 100%;
+}
+.rivers-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.river1-text{
+    grid-column: 2/4;
+    margin: 2rem;
+}
+.river1-img{
+    margin: 2rem;
+}
+.river2-text{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: 2rem;
+}
+.river2-img{
+    grid-column: 3/4;
+    margin: 2rem;
+}
+.river3-text{
+    grid-column: 2/4;
+    margin: 2rem;
+}
+.river3-img{
+    grid-column: 1/2;
+    margin: 2rem;
 }
 
 @media screen and (max-width: 900px) {
