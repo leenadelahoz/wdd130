@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 Component Activity</title>
+    <link rel="stylesheet" href="styles/week12.css">
+</head>
+<body>
+    <h1>Walt Disney World</h1>
+    <button class="accordion">Welcome to the Magic</button>
+    <div class="panel">
+      <p>Disney World, located in Orlando, Florida, is a place where dreams come true and magic fills the air. Opened in 1971, this world-renowned destination is not just a theme park—it's an experience that brings together imagination, innovation, and timeless stories. Spanning over 40 square miles, Disney World is home to four unique theme parks: Magic Kingdom, Epcot, Disney's Hollywood Studios, and Disney's Animal Kingdom. Each offers its own enchanting blend of attractions, shows, and experiences designed to captivate visitors of all ages.</p>
+    </div>
+    
+    <button class="accordion">Endless Adventures Await</button>
+    <div class="panel">
+      <p>Whether you're wandering down Main Street, U.S.A., gazing at the iconic Cinderella Castle, or soaring into space on thrilling rides like Space Mountain, Disney World has something for everyone. For those who love culture and technology, Epcot's World Showcase and Future World offer fascinating insights and interactive fun. Meanwhile, Hollywood Studios brings cinematic adventures to life, from the galaxy of Star Wars to Pixar’s playful characters. Animal Kingdom combines nature and storytelling, immersing guests in exotic landscapes and close encounters with wildlife. Beyond the parks, water parks, resorts, and shopping districts expand the Disney experience.</p>
+    </div>
+    
+    <button class="accordion">Creating Lifelong Memories</button>
+    <div class="panel">
+      <p>A visit to Disney World is more than a vacation; it’s an opportunity to create memories that last a lifetime. Whether you're watching spectacular fireworks light up the night sky, meeting beloved characters, or sharing special moments with family and friends, every visit is unique and unforgettable. With meticulous attention to detail and exceptional guest service, Disney World continues to inspire joy and wonder in millions of visitors each year. It’s a destination where magic and reality blend, leaving everyone who steps inside its gates with a sense of awe and excitement..</p>
+    </div> 
+   <script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+   </script> 
+</body>
+</html>
